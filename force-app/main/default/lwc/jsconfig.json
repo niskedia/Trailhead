@@ -3,6 +3,12 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+            "c/mortgage": [
+                "mortgage/mortgage.js"
+            ],
+            "c/mortgageCalc": [
+                "mortgageCalc/mortgageCalc.js"
+            ],
             "c/myFirstWebComponent": [
                 "myFirstWebComponent/myFirstWebComponent.js"
             ]
