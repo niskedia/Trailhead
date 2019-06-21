@@ -3,9 +3,9 @@ import { LightningElement, api, wire } from 'lwc';
 import { getRecord, getFieldValue } from 'lightning/uiRecordApi';
 import ACCOUNT_OBJECT from '@salesforce/schema/Account';
 import NAME_FIELD from '@salesforce/schema/Account.Name';
-import OWNER_NAME from '@salesforce/schema/Account.Owner.Name';
+import OWNER_NAME_FIELD from '@salesforce/schema/Account.Owner.Name';
 
-const FIELDSARRAY = [NAME_FIELD, OWNER_NAME];
+const FIELDSARRAY = [NAME_FIELD, OWNER_NAME_FIELD];
 export default class LWC_RecordViewForm extends LightningElement {
      /** Id of record to display. */
     @api recordId;
@@ -24,6 +24,6 @@ export default class LWC_RecordViewForm extends LightningElement {
     }
 
     get ownerName() {
-        return this.record.data ? getFieldValue(this.record.data, OWNER_NAME) : '';
+        return this.record.data ? getFieldValue(this.record.data, OWNER_NAME_FIELD) : '';
     }
 }

@@ -6,12 +6,12 @@ import { refreshApex } from '@salesforce/apex';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import FIRSTNAME_FIELD from '@salesforce/schema/Contact.FirstName';
 import LASTNAME_FIELD from '@salesforce/schema/Contact.LastName';
-import ID_FIELD from '@salesforce/schema/Contact.Id';
+//import ID_FIELD from '@salesforce/schema/Contact.Id';
 
 
 const cols = [
-    { label: 'First Name', fieldName: 'FirstName', editable: true },
-    { label: 'Last Name', fieldName: 'LastName', editable: true },
+    { label: 'First Name', fieldName: FIRSTNAME_FIELD.fieldApiName, editable: true },
+    { label: 'Last Name', fieldName: LASTNAME_FIELD.fieldApiName, editable: true },
     { label: 'Title', fieldName: 'Title' },
     { label: 'Phone', fieldName: 'Phone', type: 'phone' },
     { label: 'Email', fieldName: 'Email', type: 'email' }

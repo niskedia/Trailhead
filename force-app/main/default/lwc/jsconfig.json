@@ -5,7 +5,37 @@
         "paths": {
             "c/lwc_LtgDataTable": [
                 "lwc_LtgDataTable/lwc_LtgDataTable.js"
+            ],
+            "c/lwc_RecordEditForm": [
+                "lwc_RecordEditForm/lwc_RecordEditForm.js"
+            ],
+            "c/lwc_RecordViewForm": [
+                "lwc_RecordViewForm/lwc_RecordViewForm.js"
+            ],
+            "c/mortgage": [
+                "mortgage/mortgage.js"
+            ],
+            "c/mortgageCalc": [
+                "mortgageCalc/mortgageCalc.js"
+            ],
+            "c/myFirstWebComponent": [
+                "myFirstWebComponent/myFirstWebComponent.js"
+            ],
+            "c/lwc_WireMethodWithParam": [
+                "lwc_WireMethodWithParam/lwc_WireMethodWithParam.js"
+            ],
+            "c/lwc_ApexImperativeMethod": [
+                "lwc_ApexImperativeMethod/lwc_ApexImperativeMethod.js"
             ]
         }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
     }
 }
